@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="js/picturefill.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bd562">
+    <link rel="icon"  href="favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Cat Energy">
+    <meta name="application-name" content="Cat Energy">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#68b738">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cat Energy - функціональне харчування для котів">
+</head>
+<body>
+    <header class="page-header page-header--home">
+        <div class="page-header__wrapper">
+            <div class="page-header__logo logo">
+                <a class="logo-link" href="index.html">
+                    <picture>
+                        <source srcset="img/logo-desktop.svg" media="(min-width: 767px)" />
+                        <source srcset="img/logo-mobile.svg" />
+                        <img class="logo-image" src="img/logo-mobile.svg" width="100" height="100" alt="Cat Energy">
+                    </picture>
+                </a>
+                <a class="logo-text" href="index.html">
+                    <img class="logo-text-image" src="img/logo-mobile-header.svg" width="100" height="100" alt="Cat Energy">
+                </a>
+                <a class="page-header__toggle page-header__toggle--closed"></a>
+            </div>
+        </div>
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--active">
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="catalog.html">Каталог продукції</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Підбір програми</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <main class="page-main">
+
+        <section class="food">
+            <div class="food__wrapper">
+                <div class="food__block">
+                    <h1 class="food__title">Функціональне <br> харчування для котів</h1>
+                    <p class="food__slogan">Слідкуєш за своїм здоров'ям? Слідкуй за здоров'ям кота!</p>
+                    <picture>
+                        <source srcset="img/index-can.png 1x, img/index-can-retina.png 2x" media="(min-width: 1267px)" />
+                        <source type="image/webp" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet-retina.webp 2x" media="(min-width: 767px)" />
+                        <source srcset="img/index-can-tablet.jpg 1x, img/index-can-tablet-retina.jpg 2x" media="(min-width: 767px)" />
+                        <source srcset="img/index-can-mobile.png 1x, img/index-can-mobile-retina.png 2x" />
+                        <img class="food__picture" src="img/index-can.png" alt="Cat Energy Product">
+                    </picture>
+                </div>
+                <a class="cat-button food__button" href="form.html">Підібрати програму</a>
+            </div>
+            <picture>
+                <source type="image/webp" srcset="img/index-background-desktop.webp 1x, img/index-background-desktop-retina.webp 2x" media="(min-width: 1267px)" />
+                <source srcset="img/index-background-desktop.jpg 1x, img/index-background-desktop-retina.jpg 2x" media="(min-width: 1267px)" />
+                <img class="food__background" src="img/index-background-desktop.jpg" alt="Cat Photo"/>
+            </picture>
+        </section>
+
+        <section class="catalogs">
+            <div class="catalogs__wrapper">
+                <ul class="catalogs__list">
+                    <li class="catalogs__item">
+                        <div class="catalogs__title-block">
+                            <picture>
+                                <source srcset="img/cat-slim.svg" media="(min-width: 1267px)" />
+                                <source srcset="img/slim.svg" />
+                                <img class="catalogs__icon" src="img/slim.svg" width="50px" height="55px" alt="CatEnergy SLIM">
+                            </picture>
+                            <h2 class="catalogs__title">Похудання</h2>
+                        </div>
+                        <p class="catalogs__text">Ваш кіт важить більше собаки і майже втратив здатність лазити по деревах?
+                            Пора на дієту! Cat Energy Slim допоможе вашому улюбленцю скинути зайву вагу.</p>
+                        <a class="catalogs__button" href="catalog.html">Каталог SLIM</a>
+                    </li>
+                    <li class="catalogs__item">
+                        <div class="catalogs__title-block">
+                            <picture>
+                                <source srcset="img/cat-pro.svg" media="(min-width: 1267px)" />
+                                <source srcset="img/pro.svg" />
+                                <img class="catalogs__icon" src="img/pro.svg" width="70px" height="50px" alt="CatEnergy PRO">
+                            </picture>
+                            <h2 class="catalogs__title">Набір маси</h2>
+                        </div>
+                        <p class="catalogs__text">Заробити авторитет серед дворових котів і навіть собак?
+                            Серія Cat Energy Pro допоможе вашому котові наростити необхідні м'язи!</p>
+                        <a class="catalogs__button" href="catalog.html">Каталог PRO</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="instruction">
+            <div class="instruction__wrapper">
+                <h3 class="instruction__title">Як це працює</h3>
+                <ul class="instruction__list">
+                    <li class="instruction__item">
+                        <div class="instruction__item-block">
+                            <img class="instruction__icon" src="img/advantage-1.svg" alt="" width="50" height="50">
+                        </div>
+                        <p class="instruction__text">Функціональне харчування містить тільки корисні поживні речовини.</p>
+                        <p class="instruction__number">1</p>
+                    </li>
+                    <li class="instruction__item">
+                        <div class="instruction__item-block">
+                            <img class="instruction__icon" src="img/advantage-2.svg" alt="" width="50" height="50">
+                        </div>
+                        <p class="instruction__text">Випускається у вигляді порошку, який потрібно лише залити окропом і готово.</p>
+                        <p class="instruction__number">2</p>
+                    </li>
+                    <li class="instruction__item">
+                        <div class="instruction__item-block">
+                            <img class="instruction__icon" src="img/advantage-3.svg" alt="" width="50" height="50">
+                        </div>
+                        <p class="instruction__text">Замініть один-два прийоми звичайної їжі на наше функціональне харчування.</p>
+                        <p class="instruction__number">3</p>
+                    </li>
+                    <li class="instruction__item">
+                        <div class="instruction__item-block">
+                            <img class="instruction__icon" src="img/advantage-4.svg" alt="" width="50" height="50">
+                        </div>
+                        <p class="instruction__text">Вже через місяць насолоджуйтеся змінами на краще вашого улюбленця!
+                        <p class="instruction__number">4</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2 class="example__title">Живий приклад</h2>
+            <div class="example__wrapper">
+                <div class="example__container">
+                    <p class="example__text">Борис скинув 5 кг за 2 місяці, просто замінивши свій звичайний корм на Cat Energy Slim.
+                        Відмінний результат без виснажливих тренувань! При цьому він не міняв своїх звичок і як і раніше спить по 16 годин на день.</p>
+                    <ul class="example__list stats">
+                        <li class="stats__item">
+                            <p class="stats__text">
+                                <span class="stats__number">5 кг</span>
+                                <span class="stats__info">зниження ваги</span>
+                            </p>
+                        </li>
+                        <li class="stats__item">
+                            <p class="stats__text">
+                                <span class="stats__number">60 днів</span>
+                                <span class="stats__info">знадобилось часу</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="example__price">Витрати на харчування: 15000 грн</p>
+                    <div class="example__image">
+                        <img id="example__slider" src="img/before-after.png" alt="Cat Example">
+                        <div class="example__range-block">
+                            <span class="example__range-before">Було</span>
+                            <input class="example__range" type="range" min="0" max="2" value="1" step="1" id="cat-range">
+                            <label for="cat-range">Було-стало</label>
+                            <span class="example__range-after">Стало</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__wrapper">
+                <div class="map__text">
+                    <h3 class="map__call">Запрошуємо дилерів до співпраці!</h3>
+                    <p class="map__address">вул. Котячих мрій 9, м. Львів</p>
+                </div>
+                <div class="map__map">
+                    <picture>
+                        <source type="image/webp" srcset="img/map.webp 1x, img/map-retina.webp 2x"/>
+                        <source srcset="img/map.jpg 1x, img/map-retina.jpg 2x"/>
+                        <img class="map__map-image" src="img/map.jpg" alt="Map">
+                    </picture>
+                    <img class="map__map-pin" src="img/map-pin.svg" width="113" height="106" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__title">
+                <img class="page-footer__logo" src="img/footer-logo.svg" width="100" height="100" alt="logo">
+            </div>
+            <div class="page-footer__socials social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="#">
+                            <img class="social__icon social__icon--facebook" src="img/facebook.svg" width="40px" height="40px" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter" href="#">
+                            <img class="social__icon social__icon--twitter" src="img/twitter.svg" width="40px" height="40px" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--linkedin" href="#">
+                            <img class="social__icon social__icon--linkedinfb" src="img/linkedin.svg" width="40px" height="40px" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <p class="copyright__text">All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/mainscript.js"></script>
+</body>
+</html>

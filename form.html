@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Підібрати програму</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="js/picturefill.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bd562">
+    <link rel="icon"  href="favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Cat Energy">
+    <meta name="application-name" content="Cat Energy">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#68b738">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cat Energy - функціональне харчування для котів">
+</head>
+<body>
+<header class="page-header page-header--form">
+    <div class="page-header__wrapper">
+        <div class="page-header__logo logo">
+            <a class="logo-link" href="index.html">
+                <picture>
+                    <source srcset="img/logo-desktop.svg" media="(min-width: 767px)" />
+                    <source srcset="img/logo-mobile.svg" />
+                    <img class="logo-image" src="img/logo-mobile.svg" width="100" height="100" alt="Cat Energy">
+                </picture>
+            </a>
+            <a class="logo-text" href="index.html">
+                <img class="logo-text-image" src="img/logo-mobile-header.svg" width="100" height="100" alt="Cat Energy">
+            </a>
+            <a class="page-header__toggle page-header__toggle--closed"></a>
+        </div>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a href="index.html">Головна</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="catalog.html">Каталог продукції</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                    <a href="form.html">Підбір програми</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main class="page-main page-main--form">
+        <section class="forms">
+            <div class="forms__wrapper">
+                <h2 class="forms__title">Підбір програми</h2>
+                <p class="forms__text">Заповніть анкету і ми підберемо програму харчування для вашого кота</p>
+                <form class="forms__form" action="#" method="get">
+                    <div class="forms__main">
+                        <fieldset class="forms__cat">
+                            <div class="forms__block">
+                                <label for="forms__name">
+                                    Ім'я:
+                                </label>
+                                <input id="forms__name" type="text" name="name" placeholder="Мурчик" required>
+                            </div>
+                            <div class="forms__block">
+                                <label for="forms__weight">
+                                    Вага(кг):
+                                </label>
+                                <input id="forms__weight" type="text" name="weight" placeholder="7" required>
+                            </div>
+                            <div class="forms__block">
+                                <label for="forms_age">
+                                    Вік(років):
+                                </label>
+                                <input id="forms_age" type="text" placeholder="7" name="age">
+                            </div>
+                        </fieldset>
+                        <fieldset class="forms__purpose">
+                            <div class="forms__radio">
+                                <input id="slim-radio" type="radio" name="purpose" value="Похудання" checked>
+                                <label for="slim-radio">Похудання</label>
+                            </div>
+
+                            <div class="forms__radio">
+                                <input id="pro-radio" type="radio" name="purpose" value="Набір маси">
+                                <label for="pro-radio">Набір маси</label>
+                            </div>
+                            <div class="forms__radio">
+                                <input id="dk-radio" type="radio" name="purpose" value="Не знаю(Потрібна ваша порада)">
+                                <label for="dk-radio">Не знаю (Потрібна ваша порада)</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset class="forms__group forms__contacts">
+                        <legend class="forms__legend cat-title">Контакти власника кота</legend>
+                        <div class="forms__block">
+                            <label for="forms_email">
+                                Email:
+                            </label>
+                            <input id="forms_email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                        </div>
+                        <div class="forms__block">
+                            <label for="forms_phone">
+                                Телефон:
+                            </label>
+                            <input id="forms_phone" type="tel" name="phone" placeholder="066 1234567" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="forms__group forms__comment">
+                        <legend class="forms__legend cat-title">Коментар</legend>
+                        <textarea placeholder="Розкажіть про звички вашого кота"></textarea>
+                    </fieldset>
+                    <fieldset class="forms__more">
+                        <legend class="forms__legend cat-title">Додатково</legend>
+                        <div class="forms__supplement">
+                            <input id="sugar" type="checkbox" name="sugarfree" checked>
+                            <label for="sugar">
+                                Цукрозамінник
+                            </label>
+                        </div>
+                        <div class="forms__supplement">
+                            <input id="water" type="checkbox" name="water">
+                            <label for="water">
+                                Питна вода
+                            </label>
+                        </div>
+                        <div class="forms__supplement">
+                            <input id="milk" type="checkbox" name="milk">
+                            <label for="milk">
+                                Молоко
+                            </label>
+                        </div>
+                        <div class="forms__supplement">
+                            <input id="vitamins" type="checkbox" name="vitamins">
+                            <label for="vitamins">
+                                Вітаміни
+                            </label>
+                        </div>
+                    </fieldset>
+                    <button class="cat-button forms__button" type="submit">Надіслати заявку</button>
+                    <!--small class="forms__info">
+                        <sup>*</sup> - обов'язкові поля
+                    </small-->
+                </form>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__wrapper">
+                <div class="map__text">
+                    <h3 class="map__call">Запрошуємо дилерів до співпраці!</h3>
+                    <p class="map__address">вул. Котячих мрій 9, м. Львів</p>
+                </div>
+                <div class="map__map">
+                    <picture>
+                        <source type="image/webp" srcset="img/map.webp 1x, img/map-retina.webp 2x"/>
+                        <source srcset="img/map.jpg 1x, img/map-retina.jpg 2x"/>
+                        <img class="map__map-image" src="img/map.jpg" alt="Map">
+                    </picture>
+                    <img class="map__map-pin" src="img/map-pin.svg" width="113" height="106" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <div class="page-footer__title">
+            <img class="page-footer__logo" src="img/footer-logo.svg" width="100" height="100" alt="logo">
+        </div>
+        <div class="page-footer__socials social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="#">
+                        <img class="social__icon social__icon--facebook" src="img/facebook.svg" width="40px" height="40px" alt="facebook">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--twitter" href="#">
+                        <img class="social__icon social__icon--twitter" src="img/twitter.svg" width="40px" height="40px" alt="twitter">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--linkedin" href="#">
+                        <img class="social__icon social__icon--linkedinfb" src="img/linkedin.svg" width="40px" height="40px" alt="linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <p class="copyright__text">All rights reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="js/mainscript.js"></script>
+</body>
+</html>

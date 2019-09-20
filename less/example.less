@@ -1,0 +1,300 @@
+.example {
+  background-color: @bg-grey;
+  margin-top: 20px;
+}
+
+.example__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__title {
+  padding: 35px 0 35px;
+  margin: 0 auto;
+  width: 280px;
+
+  .title-mobile();
+}
+
+.example__text {
+  margin: 0;
+  padding: 0;
+
+  .text-mobile();
+}
+
+.example__list {
+  min-height: 70px;
+  padding: 0;
+  margin: 30px 0 25px;
+  list-style: none;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats__text {
+  position: relative;
+
+  width: 124px;
+
+  border: 1px solid @sec-color;
+  border-radius: 3px;
+}
+
+.stats__number {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: @title-color;
+}
+
+.stats__info {
+  position: absolute;
+  bottom: -10px;
+
+  display: block;
+  width: 88px;
+  margin-left: 18px;
+
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 12px;
+  color: @text-color;
+
+  background-color: @bg-grey;
+}
+
+.example__price {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  color: @title-color;
+}
+
+
+
+.example__image img {
+  width: 311px;
+  height: 232px;
+  margin: 30px auto 10px;
+}
+
+.example__range-block {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.example__range-block label {
+  display: none;
+}
+
+.example__range-before,
+.example__range-after {
+  margin: 10px;
+
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @title-color;
+}
+
+@media (min-width: @tablet-width) {
+
+  .example {
+    background-color: white;
+  }
+
+  .example__container {
+    position: relative;
+
+    width: 708px;
+  }
+
+  .example__title {
+    padding: 60px 0 60px;
+    width: 708px;
+
+    .title-tablet();
+  }
+
+  .example__text {
+    .text-tablet();
+  }
+
+  .example__list {
+    width: 364px;
+    min-height: 75px;
+    margin: 30px 0 0;
+  }
+
+  .stats__text {
+    width: 162px;
+  }
+
+  .stats__number {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .stats__info {
+    bottom: -10px;
+
+    width: 90px;
+    margin-left: 36px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: @bg-white;
+  }
+
+  .example__price {
+    position: absolute;
+    top: 115px;
+    right: 0;
+
+    width: 230px;
+
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+
+  .example__image {
+    position: relative;
+
+    width: 708px;
+    height: 460px;
+    margin: 220px auto 0;
+
+    text-align: center;
+
+    background-color: @bg-grey;
+  }
+
+
+  .example__image img {
+    position: absolute;
+    top: -200px;
+    left: 47px;
+    z-index: 10;
+
+    display: block;
+    width: 614px;
+    height: 500px;
+  }
+
+  .example__range-block {
+    padding-top: 350px;
+  }
+
+  .example__range-before,
+  .example__range-after {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .example__wrapper {
+    background-color: @bg-grey;
+  }
+
+  .example__container {
+    position: relative;
+
+    width: 1220px;
+    min-height: 600px;
+  }
+
+  .example__title {
+    width: 1220px;
+
+    background-color: @bg-white;
+  }
+
+  .example__text {
+    .zero-indents();
+    padding-top: 75px;
+    width: 435px;
+  }
+
+  .example__list {
+    .zero-indents();
+    margin: 75px 0 0;
+  }
+
+
+  .stats__text {
+    width: 162px;
+  }
+
+  .stats__number {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .stats__info {
+    bottom: -10px;
+
+    width: 90px;
+    margin-left: 36px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: @bg-grey;
+  }
+
+  .example__price {
+    position: static;
+
+    width: 435px;
+    .zero-indents();
+    margin: 75px 0 0;
+
+    text-align: left;
+  }
+
+
+  .example__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+
+    width: 677px;
+  }
+
+
+  .example__image img {
+    position: static;
+
+    width: 677px;
+    height: 499px;
+  }
+
+  .example__range-block {
+    padding-top: 0px;
+  }
+
+}

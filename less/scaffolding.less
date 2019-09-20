@@ -1,0 +1,130 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 27px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: black;
+  font-style: normal;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Oswald";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald-Medium";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") format("woff");
+}
+
+.page-main {
+  overflow: hidden;
+}
+
+
+.cat-button {
+  display: block;
+  padding: 15px 30px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: @main-color;
+  cursor: pointer;
+}
+
+.cat-button:hover {
+  background-color: #5eaa2f;
+}
+
+.cat-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+
+  .cat-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+
+
+.cat-title {
+  width: 100%;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: @title-color;
+}
+
+.cat-title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+
+  background: @main-color;
+
+  border: solid white;
+  border-width: 0 10px;
+}
+
+.cat-title::after {
+  margin-right: -100%;
+}
+
+
+@media (min-width: @tablet-width) {
+  .cat-title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    background: @main-color;
+
+    border: solid white;
+    border-width: 0 10px;
+  }
+
+  .cat-title::before {
+    margin-left: -100%;
+  }
+}

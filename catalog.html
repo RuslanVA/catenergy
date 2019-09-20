@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="js/picturefill.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bd562">
+    <link rel="icon"  href="favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Cat Energy">
+    <meta name="application-name" content="Cat Energy">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#68b738">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cat Energy - функціональне харчування для котів">
+</head>
+<body>
+<header class="page-header page-header--catalog">
+    <div class="page-header__wrapper">
+        <div class="page-header__logo logo">
+            <a class="logo-link" href="index.html">
+                <picture>
+                    <source srcset="img/logo-desktop.svg" media="(min-width: 767px)" />
+                    <source srcset="img/logo-mobile.svg" />
+                    <img class="logo-image" src="img/logo-mobile.svg" width="100" height="100" alt="Cat Energy">
+                </picture>
+            </a>
+            <a class="logo-text" href="index.html">
+                <img class="logo-text-image" src="img/logo-mobile-header.svg" width="100" height="100" alt="Cat Energy">
+            </a>
+            <a class="page-header__toggle page-header__toggle--closed"></a>
+        </div>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a href="index.html">Головна</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                    <a href="catalog.html">Каталог продукції</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="form.html">Підбір програми</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main class="page-main page-main--catalog">
+
+        <section class="products">
+            <h2 class="products__title">Каталог продукції</h2>
+            <div class="products_wrapper">
+                <ul class="products__list">
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-1-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-1-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-1-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-1-mobile.jpg" width="140" height="144" alt="Cat Energy Pro 500g Курка">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Pro 500g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">500г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Курка</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">50 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-2-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-2-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-2-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-2-mobile.jpg" width="140" height="144" alt="Cat Energy Pro 1000g Курка">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Pro 1000g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">1000г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Курка</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">100 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-3-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-3-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-3-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-3-mobile.jpg" width="140" height="144" alt="Cat Energy Pro 500g Риба">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Pro 500g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">500г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Риба</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">50 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-4-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-4-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-4-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-4-mobile.jpg" width="140" height="144" alt="Cat Energy Pro 1000g Риба">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Pro 1000g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">1000г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Риба</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">100 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-5-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-5-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-5-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-5-mobile.jpg" width="140" height="144" alt="Cat Energy Slim 500g Гречка">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Slim 500g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">500г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Гречка</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">40 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-6-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-6-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-6-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-6-mobile.jpg" width="140" height="144" alt="Cat Energy Slim 1000g Гречка">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Slim 1000g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">1000г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Гречка</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">80 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product">
+                        <picture>
+                            <source srcset="img/catalogs/catalog-7-desktop.png" media="(min-width: 1267px)" />
+                            <source srcset="img/catalogs/catalog-7-tablet.png" media="(min-width: 767px)" />
+                            <source srcset="img/catalogs/catalog-7-mobile.jpg" />
+                            <img class="product__image" src="img/catalogs/catalog-7-mobile.jpg" width="140" height="144" alt="Cat Energy Slim 500g Рис">
+                        </picture>
+                        <h3 class="product__title">Cat Energy Slim 500g</h3>
+                        <div class="product__text">
+                            <p class="product__text__row">
+                                <span class="products__text__left">Вага</span>
+                                <span class="products__text__right">500г</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Смак</span>
+                                <span class="products__text__right">Рис</span>
+                            </p>
+                            <p class="product__text__row">
+                                <span class="products__text__left">Ціна</span>
+                                <span class="products__text__right">40 грн</span>
+                            </p>
+                        </div>
+                        <a class="cat-button product__button">Замовити</a>
+                    </li>
+                    <li class="products__item product--more">
+                        <img class="product--more__image" src="img/plus.svg" width="100" height="100" alt="+">
+                        <h3 class="product--more__title">Показати ще 100500 товарів</h3>
+                        <p class="product--more__text">Насправді смаків набагато більше</p>
+                        <a class="product--more__button cat-button">Показати усі</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sup-products">
+            <h2 class="sup-products__title cat-title">Додаткові товари</h2>
+            <div class="sup-products__wrapper">
+                <ul class="sup-products__list">
+                    <li class="sup-products__item supplement">
+                        <div class="supplement__block">
+                            <h3 class="supplement__title">Цукрозамінник</h3>
+                            <p class="supplement__text">
+                                <span class="upplement__text__left">100г</span>
+                                <span class="upplement__text__right">10 грн</span>
+                            </p>
+                        </div>
+                        <a class="supplement__button cat-button">Замовити</a>
+                    </li>
+                    <li class="sup-products__item supplement">
+                        <div class="supplement__block">
+                            <h3 class="supplement__title">Питна вода</h3>
+                            <p class="supplement__text">
+                                <span class="upplement__text__left">5л</span>
+                                <span class="upplement__text__right">50 грн</span>
+                            </p>
+                        </div>
+                        <a class="supplement__button cat-button">Замовити</a>
+                    </li>
+                    <li class="sup-products__item supplement">
+                        <div class="supplement__block">
+                            <h3 class="supplement__title">Молоко</h3>
+                            <p class="supplement__text">
+                                <span class="upplement__text__left">1л</span>
+                                <span class="upplement__text__right">20 грн</span>
+                            </p>
+                        </div>
+                        <a class="supplement__button cat-button">Замовити</a>
+                    </li>
+                    <li class="sup-products__item supplement">
+                        <div class="supplement__block">
+                            <h3 class="supplement__title">Вітаміни</h3>
+                            <p class="supplement__text">
+                                <span class="upplement__text__left">30г</span>
+                                <span class="upplement__text__right">30 грн</span>
+                            </p>
+                        </div>
+                        <a class="supplement__button cat-button">Замовити</a>
+                    </li>
+                </ul>
+                <div class="sup-products__gift">
+                    <img class="sup-products__gift__image" src="img/gift.svg" width="55" height="60" alt="">
+                    <p class="sup-products__gift__text">Замовте усе і отримайте чохол для кота в подарунок</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__wrapper">
+                <div class="map__text">
+                    <h3 class="map__call">Запрошуємо дилерів до співпраці!</h3>
+                    <p class="map__address">вул. Котячих мрій 9, м. Львів</p>
+                </div>
+                <div class="map__map">
+                    <picture>
+                        <source type="image/webp" srcset="img/map.webp 1x, img/map-retina.webp 2x"/>
+                        <source srcset="img/map.jpg 1x, img/map-retina.jpg 2x"/>
+                        <img class="map__map-image" src="img/map.jpg" alt="Map">
+                    </picture>
+                    <img class="map__map-pin" src="img/map-pin.svg" width="113" height="106" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <div class="page-footer__title">
+            <img class="page-footer__logo" src="img/footer-logo.svg" width="100" height="100" alt="logo">
+        </div>
+        <div class="page-footer__socials social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="#">
+                        <img class="social__icon social__icon--facebook" src="img/facebook.svg" width="40px" height="40px" alt="facebook">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--twitter" href="#">
+                        <img class="social__icon social__icon--twitter" src="img/twitter.svg" width="40px" height="40px" alt="twitter">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--linkedin" href="#">
+                        <img class="social__icon social__icon--linkedinfb" src="img/linkedin.svg" width="40px" height="40px" alt="linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <p class="copyright__text">All rights reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="js/mainscript.js"></script>
+</body>
+</html>
